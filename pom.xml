@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.29.142:4796/circularoneresources/repository/walmart-releases/</url>
+	      <url>http://54.221.142.197:4796/circularoneresources/repository/walmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.29.142:4796/circularoneresources/repository/walmart-snapshot/</url>
+	      <url>http://54.221.142.197:4796/circularoneresources/repository/walmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
