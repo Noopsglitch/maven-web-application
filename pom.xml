@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Circular One Resources Releases Nexus Repository</name>
-	      <url>http://54.172.225.221:8081/circularoneresources/repository/walmart-releases/</url>
+	      <url>http://172.31.23.156:8081/circularoneresources/repository/walmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Circular One Resources Snapshot Nexus Repository </name>
-	      <url>http://54.172.225.221:8081/circularoneresources/repository/walmart-snapshot/</url>
+	      <url>http://172.31.23.156:8081/circularoneresources/repository/walmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
