@@ -10,6 +10,9 @@ echo "Job name is: ${env.JOB_NAME}"
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
 try{
+    
+slackNotifications('STARTED')
+    
 stage('CheckOutCode'){
 git branch: 'development', credentialsId: 'a4266f3f-9e7e-41c0-87ce-e681403882a3', url: 'https://github.com/Noopsglitch/maven-web-application.git'
 }
