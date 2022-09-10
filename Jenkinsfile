@@ -1,4 +1,4 @@
-node{ ("walmartnode")
+node{
     
 def mavenHome = tool name: "maven3.8.6"
 
@@ -20,7 +20,7 @@ git branch: 'development', credentialsId: 'a4266f3f-9e7e-41c0-87ce-e681403882a3'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-/*
+
 stage('ExcecuteSonarQubeReport'){
 sh "${mavenHome}/bin/mvn clean sonar:sonar"
 }
@@ -35,9 +35,8 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@17
 }
 
 }
+}// try block closing
 
-}//try block closing
-*/
     
 catch (e) {
 slackNotifications('FAILED')
